@@ -1,0 +1,750 @@
+/* --------------------------------------------------
+            Index CSS section
+
+******** 1 Defalt Css
+******** 2 Helper Classes Css
+******** 3 section
+********    3.1 Header css
+********    3.2 Banner css
+********    3.3 Mid content
+********    3.4 Footer css
+******** 4 About page Css
+******** 5 Branches
+******** 6 Contact css 
+-----------------------------------------------*/
+
+
+
+
+/* --------------------1 Defalt Css here -------------- ----------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+
+* {
+         margin: 0px;
+         padding: 0px;
+         box-sizing: border-box;
+     }
+
+     body {
+         font-size: 16px;
+         font-family: "Open Sans", sans-serif;
+         font-weight: 400;
+         color: rgb(80, 80, 80);
+     }
+
+     .w-img img {
+         width: 100%;
+         transition: all 0.3s ease-out 0s;
+     }
+
+     .m-img img {
+         max-width: 100%;
+         transition: all 0.3s ease-in-out 0s;
+     }
+
+     a:focus, .button:focus {
+         text-decoration: none;
+         outline: none;
+     }
+
+     a:focus, a:hover, .portfolio-cat a:hover, .footer -menu li a:hover {
+         color: rgb(43, 150, 204);
+         text-decoration: none;
+     }
+
+     a, button {
+         color: rgb(22, 150, 231);
+         outline: none medium;
+     }
+
+     button:focus, input:focus, textarea, textarea:focus {
+         outline: none !important;
+         box-shadow: none !important;
+     }
+
+     h1, h2, h3, h4, h5, h6 {
+         margin: 0px 0px 15px;
+         line-height: 1;
+     }
+
+     h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+         color: inherit;
+     }
+
+     h1 {
+         font-size: 58px;
+         font-weight: 400;
+     }
+
+     h2 {
+         font-size: 30px;
+     }
+
+     h4 {
+         font-size: 20px;
+     }
+
+     h5 {
+         font-size: 16px;
+     }
+
+     h6 {
+         font-size: 15px;
+     }
+
+     ul {
+         margin: 0px;
+         padding: 0px;
+     }
+
+     li {
+         list-style: none;
+     }
+
+     label {
+         color: rgb(126, 126, 126);
+         cursor: pointer;
+         font-size: 14px;
+     }
+
+     ::selection {
+         background: rgb(214, 177, 97);
+         color: rgb(255, 255, 255);
+         text-shadow: none;
+     }
+
+     ::placeholder {
+         color: rgb(0, 35, 90);
+         font-size: 14px;
+         opacity: 1;
+     }
+
+     /* -----------2 Helper Classes Css here -------------- ---------------------------------------------------- */
+     .g-btn {
+         font-size: 15px;
+         text-transform: uppercase;
+         text-decoration: none;
+         color: black;
+         font-weight: 700;
+         font-family: "Open Sans", sans-serif;
+         padding: 10px 50px 10px 25px;
+         border: 1px solid rgb(178, 134, 8);
+         display: inline-block;
+         transition: all 0.3s ease 0s;
+         position: relative;
+     }
+
+     .g-btn:hover {
+         color: black;
+     }
+
+     .g-btn i {
+         font-size: 20px;
+         color: rgb(178, 134, 8);
+         margin-left: 10px;
+         display: inline-block;
+         position: absolute;
+         top: 28%;
+         transition: all 0.3s ease 0s;
+     }
+
+     .g-btn:hover i {
+         margin-left: 17px;
+     }
+
+     .text-right {
+         text-align: right;
+     }
+
+     .text-left {
+         text-align: left;
+     }
+
+     .text-center {
+         text-align: center;
+     }
+
+     /* ----------- 3 section Css here -------------- 
+     -------------------------------------------- */
+     /* 3.1 Header css here */
+     .header-area {
+         background: rgb(0, 0, 0);
+         padding-top: 30px;
+         padding-bottom: 15px;
+     }
+
+     .header-area .menu-left {
+         text-align: left;
+     }
+
+     .header-area .menu-mid {
+         text-align: center;
+     }
+
+     .header-area .menu-mid .main-logo {
+         margin-bottom: 30px;
+     }
+
+     .header-area .menu-mid .main-menu ul li {
+         display: inline-block;
+         position: relative;
+     }
+
+     .header-area .menu-mid .main-menu ul li a {
+         font-size: 13px;
+         font-weight: 400;
+         text-transform: uppercase;
+         text-decoration: none;
+         display: inline-block;
+         color: rgb(255, 229, 117);
+         padding: 5px 15px;
+         font-family: "Open Sans", sans-seri;
+         position: relative;
+         transition: all 0.3s ease 0s;
+         z-index: 9999999;
+     }
+
+     .header-area .menu-mid .main-menu ul li a.active {
+         color: white;
+     }
+
+     .header-area .menu-mid .main-menu ul li a:hover {
+         color: white;
+     }
+
+     .header-area .menu-mid .main-menu ul li:hover>a {
+         color: white;
+     }
+
+     .header-area .menu-right {
+         text-align: right;
+     }
+
+     .header-area .side-logo img {
+         width: 190px;
+         margin-bottom: 7px;
+     }
+
+     .header-area .menu-mid .main-menu ul li a i {
+         font-size: 18px;
+         margin-left: 5px;
+         transition: all 0.3s ease 0s;
+         transform: translateY(2px);
+     }
+
+     .header-area .menu-mid .main-menu ul li .submenu {
+         position: absolute;
+         top: 100%;
+         left: 0px;
+         width: 200px;
+         background: rgb(0, 0, 0);
+         padding: 20px 0px;
+         opacity: 0;
+         visibility: hidden;
+         z-index: 999;
+         transition: all 0.3s ease 0s;
+         transform: scaleY(0);
+         transform-origin: 0px 0px;
+     }
+
+     .header-area .menu-mid .main-menu ul li .submenu li {
+         display: block;
+         text-align: left;
+         line-height: 20px;
+     }
+
+     .header-area .menu-mid .main-menu ul li .submenu li a:hover {
+         transform: translateX(10px);
+     }
+
+     .header-area .menu-mid .main-menu ul li:hover .submenu {
+         visibility: visible;
+         opacity: 1;
+         transform: scale(1);
+     }
+
+     /* 3.2 Banner css here */
+     .banner-area {
+         background-size: cover;
+         background-position: center center;
+         background-repeat: no-repeat;
+         border-bottom: 3px solid black;
+     }
+
+     .banner-area h1 {
+         color: rgb(96, 61, 9);
+         font-weight: 400;
+         margin-bottom: 0px;
+         line-height: 70px;
+     }
+
+     .banner-area .banner-info {
+         background: black;
+         font-size: 15px;
+         padding: 5px 10px;
+         position: relative;
+         margin-bottom: 10px;
+     }
+
+     .banner-area .banner-info a {
+         display: block;
+         color: rgb(238, 188, 54);
+         text-decoration: none;
+         font-weight: 500;
+         text-transform: capitalize;
+     }
+
+     .banner-area .banner-info span {
+         color: white;
+         font-weight: 500;
+         letter-spacing: -0.3px;
+     }
+
+     .sec-cet .banner-info span {
+         letter-spacing: 0.3px;
+     }
+     
+     .banner-text {
+         height: 100%;
+         position: relative;
+         bottom: 11%;
+     }
+
+     .banner-area .banner-info::before {
+         content: "";
+         position: absolute;
+         bottom: -2px;
+         width: 100%;
+         height: 1px;
+         background: black;
+         left: 0px;
+     }
+
+     .banner-area .gold-silver img:last-child {
+         margin-left: 15px;
+     }
+
+     .banner-area h1, .banner-area h2 {
+         font-family: "Open Sans", sans-seri;
+         color: rgb(96, 61, 9);
+         font-weight: 200;
+     }
+
+     /* 3.3 Mid content css here */
+     .product-details {
+         padding-top: 80px;
+         padding-bottom: 120px;
+     }
+
+     .product-details h5 {
+         font-size: 17px;
+         margin-bottom: 25px;
+     }
+
+     .product-details p {
+         margin-bottom: 20px;
+     }
+
+     .p-border span {
+         height: 2px;
+         background: rgb(209, 181, 54);
+         display: block;
+         position: relative;
+         margin: 15px 0px;
+     }
+
+     .p-border {
+         width: 55%;
+         float: right;
+     }
+
+     .p-border span.bdr-1 {
+         right: 20%;
+     }
+
+     .p-border span.bdr-2 {
+         right: 10%;
+     }
+
+     .product-details .prodict-right-img img {
+         width: 100%;
+     }
+
+     .product-details .product-descrip {
+         padding-right: 15px;
+         position: relative;
+         padding-top: 40px;
+     }
+
+     .product-descrip::before {
+         position: absolute;
+         content: "";
+         top: 15px;
+         left: 0px;
+         width: 60%;
+         height: 2px;
+         background: rgb(209, 181, 54);
+         display: block;
+     }
+
+     .product-details.home .product-descrip::after {
+         display: none;
+     }
+
+     /* 3.4 Footer css here */
+     .main-footer {
+         background: rgb(211, 212, 207);
+         padding-top: 70px;
+         padding-bottom: 140px;
+         border-top: 10px solid rgb(105, 106, 103);
+     }
+
+     .main-footer .footer-single-block .footer-block-list ul li {
+         line-height: 22px;
+     }
+
+     .main-footer .footer-single-block .footer-block-list ul li a {
+         font-size: 13px;
+         font-weight: 400;
+         font-family: "Open Sans", sans-seri;
+         color: rgb(92, 92, 92);
+         text-decoration: none;
+     }
+
+     .main-footer .footer-single-block .footer-block-list ul li a:hover {
+         color: rgb(209, 159, 35);
+     }
+
+     .main-footer .footer-single-block .footer-block-title h5 {
+         margin-bottom: 20px;
+         color: rgb(92, 92, 92);
+     }
+
+     .footer-single-block .footer-social span {
+         font-size: 18px;
+         font-weight: 600;
+         color: rgb(92, 92, 92);
+         display: inline-block;
+         margin-right: 10px;
+     }
+
+     .footer-single-block .footer-social a {
+         padding: 0px 3px;
+     }
+
+     .footer-single-block .footer-social {
+         padding-top: 20px;
+         border-top: 2px solid rgb(160, 159, 159);
+         margin-top: 40px;
+     }
+
+     .main-footer .f-border {
+         position: relative;
+     }
+
+     .main-footer .f-border::before {
+         content: "";
+         position: absolute;
+         width: 1px;
+         min-height: 188px;
+         background: rgb(180, 181, 178);
+         right: 26%;
+         top: 0px;
+     }
+
+     .main-footer .f-border:last-child::before {
+         background: none;
+     }
+
+     /* ----------- 4 About page Css here -------------- ---------------------------------------------------- */
+     .product-details.about .product-descrip::before {
+         width: 56%;
+     }
+
+     .product-details.about .product-descrip::after {
+         display: none;
+     }
+
+     .product-details.sub-ctr {
+         padding: 50px 0px;
+     }
+
+     .product-details.about p {
+         font-size: 14px;
+         line-height: 22px;
+     }
+
+     .about .product-descrip {
+         padding-right: 15px;
+         padding-top: 20px !important;
+     }
+
+     .about .product-descrip h4 {
+         letter-spacing: 1px;
+     }
+
+     .about .product-descrip::before {
+         top: 0px;
+     }
+
+     .product-details.about ul {
+         font-size: 14px;
+         padding-left: 16px;
+     }
+
+     .product-details.sub-ctr .p-border {
+         margin-right: 0px;
+     }
+
+     .product-descrip::after {
+         position: absolute;
+         content: "";
+         bottom: -5px;
+         width: 60%;
+         height: 2px;
+         background: rgb(209, 181, 54);
+     }
+
+     .product-details.sub-ctr.quality p {
+         font-size: 15px;
+     }
+
+     .product-details.sub-ctr.quality .product-descrip {
+         padding-right: 0;
+     }
+
+     .product-details.sub-ctr.quality .product-descrip::after {
+         right: 0 !important;
+     }
+
+     .product-details.sub-ctr p {
+         font-size: 15px;
+     }
+
+     /* -----------5 Branches / PRESENCE IN INDIA Classes Css here -------------- ---------------------------------------------------- */
+     .branch .contact-left-area::after {
+         content: '';
+         position: absolute;
+         bottom: -35px;
+         left: 0;
+         width: 56%;
+         height: 2px;
+         background: #d1b536;
+     }
+
+     .branch h2 {
+         font-size: 25px !important;
+         margin-bottom: 50px;
+     }
+
+     .branch span {
+         font-size: 15px;
+         display: block;
+     }
+
+     .branch h5 {
+         text-transform: uppercase;
+         font-weight: 600;
+         color: #666565;
+         margin-bottom: 5px;
+     }
+
+     .branch .contact-right-area {
+         padding-left: 21% !important;
+     }
+
+     .branch .branch-single-block {
+         margin-bottom: 40px;
+     }
+
+     .branch {
+         padding-bottom: 85px;
+     }
+
+     .branch .contact-left-area span {
+         font-size: 15px !important;
+         font-weight: 400 !important;
+         margin-bottom: 0 !important;
+     }
+
+     .branch .contact-right-area::before {
+         left: 21% !important;
+         width: 67% !important;
+     }
+
+     .branch .contact-right-area::after {
+         left: 21% !important;
+         bottom: -37px !important;
+         width: 67% !important;
+     }
+
+     .branch .contact-left-area::before {
+         width: 47% !important;
+     }
+
+     .branch .contact-left-area::after {
+         width: 47% !important;
+     }
+
+     /* -----------6 Contact css is here -------------- ---------------------------------------------------- */
+     .contact-area {
+         padding: 85px 0 75px 0;
+     }
+
+     .contact-area .contact-left-area {
+         padding-right: 60px;
+         position: relative;
+     }
+
+     .contact-area .contact-left-area span {
+         font-size: 12px;
+         font-weight: 600;
+         margin-bottom: 20px;
+         display: block;
+     }
+
+     .contact-area .form-area {
+         max-width: 425px;
+         padding: 40px 70px 40px 22px;
+         background: #ececec;
+     }
+
+     .contact-area .form-area form label {
+         display: block;
+         font-weight: 600;
+         margin-bottom: 5px;
+     }
+
+     .contact-area .form-area form input, .contact-area .form-area form textarea {
+         border: none;
+         height: 37px;
+         width: 100%;
+         margin-bottom: 18px;
+     }
+
+     .contact-area .form-area form input[type='submit'] {
+         color: #ada58d;
+         border-bottom: 1px solid #ada58d;
+         width: inherit;
+         height: inherit;
+         text-transform: uppercase;
+         font-weight: 600;
+         font-size: 15px;
+         padding: 8px 60px;
+         border-top: 1px solid #ada58d;
+         letter-spacing: 2px;
+         margin-top: 27px;
+     }
+
+     .contact-area h2 {
+         color: #454545;
+         font-size: 30px;
+         font-weight: 400;
+     }
+
+     .contact-area p {
+         font-size: 15px;
+         font-weight: 400;
+         color: #454545;
+     }
+
+     .contact-area .contact-right-area {
+         padding-left: 60px;
+         position: relative;
+     }
+
+     .contact-area .about-info {
+         padding-top: 40px;
+     }
+
+     .contact-area .about-info .contact-info {
+         padding-top: 25px;
+     }
+
+     .contact-area .about-info .contact-info h6 {
+         border-bottom: 1px solid #454545;
+         display: inline-block;
+         padding-bottom: 2px;
+     }
+
+     .contact-area .about-info .contact-info span {
+         display: block;
+         line-height: 18px;
+         padding-bottom: 20px;
+     }
+
+     .contact-area .about-info .tredy-inquery {
+         padding-top: 30px;
+         margin-bottom: 27px;
+     }
+
+     .contact-area .about-info .tredy-inquery h6 {
+         display: inline-block;
+         border-bottom: 1px solid #454545;
+         padding-bottom: 2px;
+     }
+
+     .contact-area .about-info .tredy-inquery span {
+         display: block;
+     }
+
+     .contact-area a.whatsapp-contact {
+         padding: 10px 25px;
+         background: #455a64;
+         display: inline-block;
+         color: white;
+         text-decoration: none;
+         font-weight: 600;
+     }
+
+     .contact-area .about-info .address-info p {
+         padding: 20px 0;
+         /* color: #454545;
+     */
+     }
+
+     .contact-area .form-area form textarea {
+         min-height: 90px;
+     }
+
+     .contact-area a.whatsapp-contact img {
+         width: 20px;
+         position: relative;
+         bottom: 2px;
+         margin-right: 5px;
+     }
+
+     .contact-area .contact-left-area::before {
+         content: '';
+         position: absolute;
+         top: -35px;
+         left: 0;
+         width: 56%;
+         height: 2px;
+         background: #d1b536;
+     }
+
+     .contact-area .contact-right-area::before {
+         content: '';
+         position: absolute;
+         top: -35px;
+         left: 10%;
+         width: 56%;
+         height: 2px;
+         background: #d1b536;
+     }
+
+     .contact-area .contact-right-area::after {
+         content: '';
+         position: absolute;
+         bottom: -60px;
+         left: 10%;
+         width: 56%;
+         height: 2px;
+         background: #d1b536;
+     }
+
+     .contact-area .contact-left-area .branch-single-block:nth-child(3) {
+         margin-bottom: 85px !important;
+     }
